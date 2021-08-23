@@ -1,0 +1,9 @@
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Data\HotelService.Data.Common\bin\Debug\netstandard2.1\HotelService.Data.Common.deps.json
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Data\HotelService.Data.Common\bin\Debug\netstandard2.1\HotelService.Data.Common.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Data\HotelService.Data.Common\bin\Debug\netstandard2.1\HotelService.Data.Common.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Data\HotelService.Data.Common\obj\Debug\netstandard2.1\HotelService.Data.Common.csprojAssemblyReference.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Data\HotelService.Data.Common\obj\Debug\netstandard2.1\HotelService.Data.Common.AssemblyInfoInputs.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Data\HotelService.Data.Common\obj\Debug\netstandard2.1\HotelService.Data.Common.AssemblyInfo.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Data\HotelService.Data.Common\obj\Debug\netstandard2.1\HotelService.Data.Common.csproj.CoreCompileInputs.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Data\HotelService.Data.Common\obj\Debug\netstandard2.1\HotelService.Data.Common.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Data\HotelService.Data.Common\obj\Debug\netstandard2.1\HotelService.Data.Common.pdb

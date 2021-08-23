@@ -1,0 +1,16 @@
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\bin\Debug\netstandard2.1\HotelService.Web.ViewModels.deps.json
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\bin\Debug\netstandard2.1\HotelService.Web.ViewModels.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\bin\Debug\netstandard2.1\HotelService.Web.ViewModels.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\bin\Debug\netstandard2.1\HotelService.Data.Common.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\bin\Debug\netstandard2.1\HotelService.Data.Models.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\bin\Debug\netstandard2.1\HotelService.Services.Mapping.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\bin\Debug\netstandard2.1\HotelService.Data.Models.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\bin\Debug\netstandard2.1\HotelService.Services.Mapping.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\bin\Debug\netstandard2.1\HotelService.Data.Common.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\obj\Debug\netstandard2.1\HotelService.Web.ViewModels.csprojAssemblyReference.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\obj\Debug\netstandard2.1\HotelService.Web.ViewModels.AssemblyInfoInputs.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\obj\Debug\netstandard2.1\HotelService.Web.ViewModels.AssemblyInfo.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\obj\Debug\netstandard2.1\HotelService.Web.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\obj\Debug\netstandard2.1\HotelService.Web.ViewModels.csproj.CopyComplete
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\obj\Debug\netstandard2.1\HotelService.Web.ViewModels.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web.ViewModels\obj\Debug\netstandard2.1\HotelService.Web.ViewModels.pdb

@@ -1,0 +1,9 @@
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Mapping\bin\Debug\netstandard2.1\HotelService.Services.Mapping.deps.json
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Mapping\bin\Debug\netstandard2.1\HotelService.Services.Mapping.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Mapping\bin\Debug\netstandard2.1\HotelService.Services.Mapping.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Mapping\obj\Debug\netstandard2.1\HotelService.Services.Mapping.csprojAssemblyReference.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Mapping\obj\Debug\netstandard2.1\HotelService.Services.Mapping.AssemblyInfoInputs.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Mapping\obj\Debug\netstandard2.1\HotelService.Services.Mapping.AssemblyInfo.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Mapping\obj\Debug\netstandard2.1\HotelService.Services.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Mapping\obj\Debug\netstandard2.1\HotelService.Services.Mapping.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Mapping\obj\Debug\netstandard2.1\HotelService.Services.Mapping.pdb

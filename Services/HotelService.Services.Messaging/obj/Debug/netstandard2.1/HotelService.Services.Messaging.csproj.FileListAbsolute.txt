@@ -1,0 +1,9 @@
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Messaging\bin\Debug\netstandard2.1\HotelService.Services.Messaging.deps.json
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Messaging\bin\Debug\netstandard2.1\HotelService.Services.Messaging.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Messaging\bin\Debug\netstandard2.1\HotelService.Services.Messaging.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Messaging\obj\Debug\netstandard2.1\HotelService.Services.Messaging.csprojAssemblyReference.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Messaging\obj\Debug\netstandard2.1\HotelService.Services.Messaging.AssemblyInfoInputs.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Messaging\obj\Debug\netstandard2.1\HotelService.Services.Messaging.AssemblyInfo.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Messaging\obj\Debug\netstandard2.1\HotelService.Services.Messaging.csproj.CoreCompileInputs.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Messaging\obj\Debug\netstandard2.1\HotelService.Services.Messaging.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Messaging\obj\Debug\netstandard2.1\HotelService.Services.Messaging.pdb

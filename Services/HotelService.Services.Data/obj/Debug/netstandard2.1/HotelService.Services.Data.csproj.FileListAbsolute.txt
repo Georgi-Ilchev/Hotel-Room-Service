@@ -1,0 +1,16 @@
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Services.Data.deps.json
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Services.Data.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Services.Data.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Data.Common.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Data.Models.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Services.Mapping.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Data.Common.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Data.Models.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Services.Mapping.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\obj\Debug\netstandard2.1\HotelService.Services.Data.csprojAssemblyReference.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\obj\Debug\netstandard2.1\HotelService.Services.Data.AssemblyInfoInputs.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\obj\Debug\netstandard2.1\HotelService.Services.Data.AssemblyInfo.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\obj\Debug\netstandard2.1\HotelService.Services.Data.csproj.CoreCompileInputs.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\obj\Debug\netstandard2.1\HotelService.Services.Data.csproj.CopyComplete
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\obj\Debug\netstandard2.1\HotelService.Services.Data.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\obj\Debug\netstandard2.1\HotelService.Services.Data.pdb
