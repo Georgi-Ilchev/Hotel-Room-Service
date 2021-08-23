@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JzYIxrXtPXs7nUTuCYty81gwml3sxMtBhlfbY8HiD11B4BDg9iipINJClsUjs/kpRJRLmitwIJU2MB+BFSWzMw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\Web\\HotelService.Web.Infrastructure\\HotelService.Web.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Goshicha\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.312\\stylecop.analyzers.1.2.0-beta.312.nupkg.sha512",
+    "C:\\Users\\Goshicha\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.312\\stylecop.analyzers.unstable.1.2.0.312.nupkg.sha512"
+  ],
+  "logs": []
+}

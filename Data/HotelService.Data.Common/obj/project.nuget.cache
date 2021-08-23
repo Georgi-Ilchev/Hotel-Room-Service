@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ErmAo/hlWls/pPizgvDjZgUSsku2qsju2+HjQ8q8olkZOnMudZeDxIai77cYuA9OfYeaigrPhVWerU8dWx6siw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\Data\\HotelService.Data.Common\\HotelService.Data.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Goshicha\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.312\\stylecop.analyzers.1.2.0-beta.312.nupkg.sha512",
+    "C:\\Users\\Goshicha\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.312\\stylecop.analyzers.unstable.1.2.0.312.nupkg.sha512",
+    "C:\\Users\\Goshicha\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
