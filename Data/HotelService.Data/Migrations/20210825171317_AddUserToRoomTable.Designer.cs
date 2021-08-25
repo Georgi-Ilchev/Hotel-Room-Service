@@ -4,14 +4,16 @@ using HotelService.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HotelService.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210825171317_AddUserToRoomTable")]
+    partial class AddUserToRoomTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -240,36 +242,6 @@ namespace HotelService.Data.Migrations
                     b.ToTable("Images");
                 });
 
-            modelBuilder.Entity("HotelService.Data.Models.Location", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IsDeleted");
-
-                    b.ToTable("Locations");
-                });
-
             modelBuilder.Entity("HotelService.Data.Models.Room", b =>
                 {
                     b.Property<int>("Id")
@@ -301,9 +273,6 @@ namespace HotelService.Data.Migrations
                     b.Property<DateTime>("Leave")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("LocationId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime?>("ModifiedOn")
                         .HasColumnType("datetime2");
 
@@ -327,8 +296,6 @@ namespace HotelService.Data.Migrations
                     b.HasIndex("CategoryId");
 
                     b.HasIndex("IsDeleted");
-
-                    b.HasIndex("LocationId");
 
                     b.HasIndex("UserId1");
 
@@ -488,19 +455,11 @@ namespace HotelService.Data.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("HotelService.Data.Models.Location", "Location")
-                        .WithMany("Rooms")
-                        .HasForeignKey("LocationId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("HotelService.Data.Models.ApplicationUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId1");
 
                     b.Navigation("Category");
-
-                    b.Navigation("Location");
 
                     b.Navigation("User");
                 });
@@ -590,11 +549,6 @@ namespace HotelService.Data.Migrations
                 });
 
             modelBuilder.Entity("HotelService.Data.Models.Extra", b =>
-                {
-                    b.Navigation("Rooms");
-                });
-
-            modelBuilder.Entity("HotelService.Data.Models.Location", b =>
                 {
                     b.Navigation("Rooms");
                 });

@@ -28,6 +28,8 @@
 
         public DbSet<Category> Categories { get; set; }
 
+        public DbSet<Location> Locations { get; set; }
+
         public DbSet<Extra> Extras { get; set; }
 
         public DbSet<Image> Images { get; set; }
