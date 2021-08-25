@@ -24,7 +24,15 @@
         {
         }
 
-        public DbSet<Setting> Settings { get; set; }
+        public DbSet<Room> Rooms { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Extra> Extras { get; set; }
+
+        public DbSet<Image> Images { get; set; }
+
+        public DbSet<RoomExtra> RoomExtras { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
 

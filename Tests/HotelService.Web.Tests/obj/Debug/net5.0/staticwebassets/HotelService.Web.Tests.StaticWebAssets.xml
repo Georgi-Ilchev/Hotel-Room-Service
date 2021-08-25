@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/Identity" Path="C:\Users\Goshicha\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.6\staticwebassets\V4\" />
+  <ContentRoot BasePath="_content/HotelService.Web" Path="C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\wwwroot\" />
+</StaticWebAssets>
