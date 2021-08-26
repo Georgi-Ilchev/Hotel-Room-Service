@@ -72,6 +72,18 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Http.Features/5.0.9": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.1",
+          "System.IO.Pipelines": "5.0.1"
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.921.36503"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.6": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "5.0.6",
@@ -235,7 +247,7 @@
       },
       "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "5.0.0"
+          "Microsoft.Extensions.Primitives": "5.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
@@ -250,7 +262,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
           "Microsoft.Extensions.Options": "5.0.0",
-          "Microsoft.Extensions.Primitives": "5.0.0"
+          "Microsoft.Extensions.Primitives": "5.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
@@ -262,7 +274,7 @@
       "Microsoft.Extensions.Configuration/5.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
-          "Microsoft.Extensions.Primitives": "5.0.0"
+          "Microsoft.Extensions.Primitives": "5.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
@@ -273,7 +285,7 @@
       },
       "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "5.0.0"
+          "Microsoft.Extensions.Primitives": "5.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
@@ -288,7 +300,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "5.0.0",
           "Microsoft.Extensions.FileProviders.Physical": "5.0.0",
-          "Microsoft.Extensions.Primitives": "5.0.0"
+          "Microsoft.Extensions.Primitives": "5.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
@@ -346,7 +358,7 @@
       },
       "Microsoft.Extensions.FileProviders.Abstractions/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "5.0.0"
+          "Microsoft.Extensions.Primitives": "5.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
@@ -359,7 +371,7 @@
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "5.0.0",
           "Microsoft.Extensions.FileSystemGlobbing": "5.0.0",
-          "Microsoft.Extensions.Primitives": "5.0.0"
+          "Microsoft.Extensions.Primitives": "5.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {
@@ -427,7 +439,7 @@
       "Microsoft.Extensions.Options/5.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
-          "Microsoft.Extensions.Primitives": "5.0.0"
+          "Microsoft.Extensions.Primitives": "5.0.1"
         },
         "runtime": {
           "lib/net5.0/Microsoft.Extensions.Options.dll": {
@@ -436,11 +448,11 @@
           }
         }
       },
-      "Microsoft.Extensions.Primitives/5.0.0": {
+      "Microsoft.Extensions.Primitives/5.0.1": {
         "runtime": {
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "fileVersion": "5.0.521.16609"
           }
         }
       },
@@ -1258,6 +1270,14 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.IO.Pipelines/5.0.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "5.0.0.1",
+            "fileVersion": "5.0.120.57516"
+          }
+        }
+      },
       "System.Linq/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -1932,7 +1952,8 @@
         "dependencies": {
           "HotelService.Data.Common": "1.0.0",
           "HotelService.Data.Models": "1.0.0",
-          "HotelService.Services.Mapping": "1.0.0"
+          "HotelService.Services.Mapping": "1.0.0",
+          "HotelService.Web.ViewModels": "1.0.0"
         },
         "runtime": {
           "HotelService.Services.Data.dll": {}
@@ -1944,6 +1965,16 @@
         },
         "runtime": {
           "HotelService.Services.Mapping.dll": {}
+        }
+      },
+      "HotelService.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "HotelService.Data.Models": "1.0.0",
+          "HotelService.Services.Mapping": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.9"
+        },
+        "runtime": {
+          "HotelService.Web.ViewModels.dll": {}
         }
       }
     }
@@ -1981,6 +2012,13 @@
       "sha512": "sha512-868Bpz85BwdDIEFdYxufcffDgm9soYTf6EUBLWpJg6gQ+HaeyWvvJyjpSsnZhuTekvloN+NHiVN5bEi1/jQFbA==",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.6",
       "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.5.0.6.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Features/5.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6CiMPjR7yjnQ2dzSNOY88FMWeNRDmmiPKn9hM23bBO0mCUDdPUCEpFhaGfog/mpa/t+y6sMBFL5Mcqd4AKdMfw==",
+      "path": "microsoft.aspnetcore.http.features/5.0.9",
+      "hashPath": "microsoft.aspnetcore.http.features.5.0.9.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.6": {
       "type": "package",
@@ -2178,12 +2216,12 @@
       "path": "microsoft.extensions.options/5.0.0",
       "hashPath": "microsoft.extensions.options.5.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Primitives/5.0.0": {
+    "Microsoft.Extensions.Primitives/5.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
-      "path": "microsoft.extensions.primitives/5.0.0",
-      "hashPath": "microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+      "sha512": "sha512-5WPSmL4YeP7eW+Vc8XZ4DwjYWBAiSwDV9Hm63JJWcz1Ie3Xjv4KuJXzgCstj48LkLfVCYa7mLcx7y+q6yqVvtw==",
+      "path": "microsoft.extensions.primitives/5.0.1",
+      "hashPath": "microsoft.extensions.primitives.5.0.1.nupkg.sha512"
     },
     "Microsoft.Identity.Client/4.14.0": {
       "type": "package",
@@ -2640,6 +2678,13 @@
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
     },
+    "System.IO.Pipelines/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
+      "path": "system.io.pipelines/5.0.1",
+      "hashPath": "system.io.pipelines.5.0.1.nupkg.sha512"
+    },
     "System.Linq/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3093,6 +3138,11 @@
       "sha512": ""
     },
     "HotelService.Services.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HotelService.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

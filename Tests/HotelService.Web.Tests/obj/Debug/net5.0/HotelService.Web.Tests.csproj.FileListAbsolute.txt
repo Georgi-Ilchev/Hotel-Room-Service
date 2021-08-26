@@ -56,7 +56,6 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\b
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Http.Connections.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Http.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Http.Extensions.dll
-C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.AspNetCore.HttpOverrides.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.AspNetCore.HttpsPolicy.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Identity.dll
@@ -136,7 +135,6 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\b
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.DataAnnotations.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.dll
-C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.Extensions.Primitives.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.Extensions.WebEncoders.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.JSInterop.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\refs\Microsoft.Net.Http.Headers.dll
@@ -537,3 +535,5 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\o
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\obj\Debug\net5.0\ref\HotelService.Web.Tests.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\obj\Debug\net5.0\HotelService.Web.Tests.pdb
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\obj\Debug\net5.0\HotelService.Web.Tests.genruntimeconfig.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Web.Tests\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll

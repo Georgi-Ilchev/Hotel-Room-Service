@@ -8,6 +8,7 @@
     using HotelService.Data.Models;
     using HotelService.Data.Repositories;
     using HotelService.Data.Seeding;
+    using HotelService.Services.Data;
     using HotelService.Services.Mapping;
     using HotelService.Services.Messaging;
     using HotelService.Web.ViewModels;
@@ -69,6 +70,9 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
+            services.AddTransient<IRoomService, RoomService>();
+            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<ILocationService, LocationService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

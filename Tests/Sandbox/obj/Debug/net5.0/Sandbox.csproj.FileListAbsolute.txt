@@ -74,3 +74,8 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\Sandbox\obj\Debug\net5.0
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\Sandbox\obj\Debug\net5.0\ref\Sandbox.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\Sandbox\obj\Debug\net5.0\Sandbox.pdb
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\Sandbox\obj\Debug\net5.0\Sandbox.genruntimeconfig.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\Sandbox\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\Sandbox\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\Sandbox\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\Sandbox\bin\Debug\net5.0\HotelService.Web.ViewModels.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\Sandbox\bin\Debug\net5.0\HotelService.Web.ViewModels.pdb

@@ -43,7 +43,6 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Http.Connections.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Http.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Http.Extensions.dll
-C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.HttpOverrides.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.HttpsPolicy.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Identity.dll
@@ -123,7 +122,6 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.DataAnnotations.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.dll
-C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Primitives.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.WebEncoders.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.JSInterop.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\Microsoft.Net.Http.Headers.dll
@@ -181,7 +179,6 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\System.IO.FileSystem.Watcher.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\System.IO.IsolatedStorage.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\System.IO.MemoryMappedFiles.dll
-C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\System.IO.Pipelines.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\System.IO.Pipes.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\System.IO.UnmanagedMemoryStream.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\refs\System.Linq.dll
@@ -469,3 +466,7 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Room\Create.cshtml.g.cs

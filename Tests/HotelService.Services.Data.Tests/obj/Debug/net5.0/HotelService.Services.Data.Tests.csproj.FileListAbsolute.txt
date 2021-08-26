@@ -172,3 +172,7 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Services.Da
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Services.Data.Tests\obj\Debug\net5.0\ref\HotelService.Services.Data.Tests.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Services.Data.Tests\obj\Debug\net5.0\HotelService.Services.Data.Tests.pdb
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Services.Data.Tests\obj\Debug\net5.0\HotelService.Services.Data.Tests.genruntimeconfig.cache
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Services.Data.Tests\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Services.Data.Tests\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Services.Data.Tests\bin\Debug\net5.0\HotelService.Web.ViewModels.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Tests\HotelService.Services.Data.Tests\bin\Debug\net5.0\HotelService.Web.ViewModels.pdb

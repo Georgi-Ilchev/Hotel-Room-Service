@@ -27,6 +27,13 @@ using HotelService.Web.ViewModels;
 #line hidden
 #nullable disable
 #nullable restore
+#line 3 "C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\Views\_ViewImports.cshtml"
+using HotelService.Web.ViewModels.Room;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\Views\Shared\_CookieConsentPartial.cshtml"
 using Microsoft.AspNetCore.Http.Features;
 
@@ -34,7 +41,7 @@ using Microsoft.AspNetCore.Http.Features;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"87a0a77f4f3531cb3e803d909ec1ca1cfbbbcad9", @"/Views/Shared/_CookieConsentPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"84a6b7425f0e1f0688715845e7c8d05d9666a235", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"046618e2c3c8332836d6c8c23c53160efc3293e9", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__CookieConsentPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-area", "", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -85,7 +92,7 @@ using Microsoft.AspNetCore.Http.Features;
 #line hidden
 #nullable disable
             WriteLiteral("    <div id=\"cookieConsent\" class=\"alert alert-info alert-dismissible fade show\" role=\"alert\">\r\n        We use cookies to understand how you use our site and to improve your experience. ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "87a0a77f4f3531cb3e803d909ec1ca1cfbbbcad95224", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "87a0a77f4f3531cb3e803d909ec1ca1cfbbbcad95442", async() => {
                 WriteLiteral("Learn More");
             }
             );

@@ -16,7 +16,7 @@ namespace HotelService.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.6")
+                .HasAnnotation("ProductVersion", "5.0.8")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("HotelService.Data.Models.ApplicationRole", b =>
@@ -316,10 +316,7 @@ namespace HotelService.Data.Migrations
                     b.Property<DateTime>("Settle")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId1")
+                    b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
@@ -330,7 +327,7 @@ namespace HotelService.Data.Migrations
 
                     b.HasIndex("LocationId");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Rooms");
                 });
@@ -496,7 +493,7 @@ namespace HotelService.Data.Migrations
 
                     b.HasOne("HotelService.Data.Models.ApplicationUser", "User")
                         .WithMany()
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId");
 
                     b.Navigation("Category");
 
