@@ -470,3 +470,7 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\bin\Debug\net5.0\System.IO.Pipelines.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Room\Create.cshtml.g.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Room\All.cshtml.g.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Shared\_RoomsListPartial.cshtml.g.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Shared\_PagingSearchPartial.cshtml.g.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Shared\_AlertPartial.cshtml.g.cs

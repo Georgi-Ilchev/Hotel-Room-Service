@@ -1,13 +1,15 @@
 ﻿namespace HotelService.Services.Data
 {
     using System;
+    using System.Collections.Generic;
     using System.IO;
     using System.Linq;
     using System.Threading.Tasks;
 
     using HotelService.Data.Common.Repositories;
     using HotelService.Data.Models;
-    using HotelService.Web.ViewModels.Room;
+    using HotelService.Services.Mapping;
+    using HotelService.Web.ViewModels.Rooms;
 
     using static HotelService.Data.Models.DataConstants.DataConstants;
 
@@ -89,6 +91,47 @@
 
             await this.roomRepository.AddAsync(room);
             await this.roomRepository.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<RoomViewModel>> ListAllWithSearch<TRoomViewModel>(int category, int page, int itemsPerPage = 8)
+        {
+            var roomsQuery = this.roomRepository.AllAsNoTracking().AsQueryable();
+
+            if (this.categoryRepository.All().Any(c => c.Id == category))
+            {
+                roomsQuery = roomsQuery.Where(c => c.Category.Id == category);
+            }
+
+            var rooms = roomsQuery
+                .Where(x => x.IsPaid == false)
+                .OrderByDescending(x => x.Id)
+                .Skip((page - 1) * itemsPerPage)
+                .Take(itemsPerPage)
+                .To<RoomViewModel>()
+                .ToList();
+
+            //foreach (var room in rooms)
+            //{
+            //    if (room.IsActive == true && DateTime.UtcNow.ToLocalTime() > room.ActiveTo)
+            //    {
+            //        room.IsActive = false;
+            //    }
+
+            //    if (room.IsActive == false && room.LastBidder != null)
+            //    {
+            //        room.IsSold = true;
+            //    }
+            //}
+
+            await this.roomRepository.SaveChangesAsync();
+
+            return rooms;
+        }
+
+        public int RoomsCount()
+        {
+            return this.roomRepository.AllAsNoTracking()
+                .Count();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace HotelService.Web.ViewModels.Room
+﻿namespace HotelService.Web.ViewModels.Rooms
 {
     using System;
     using System.Collections.Generic;
