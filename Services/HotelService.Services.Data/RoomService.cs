@@ -133,5 +133,12 @@
             return this.roomRepository.AllAsNoTracking()
                 .Count();
         }
+
+        public int RoomsCountByCategory(int categoryId)
+        {
+            return this.roomRepository.AllAsNoTracking()
+                .Where(x => x.CategoryId == categoryId)
+                .Count();
+        }
     }
 }

@@ -97,18 +97,18 @@ namespace HotelService.Web.Controllers
                     Count = roomsCount,
                 };
             }
-            //else
-            //{
-            //    auctionsCount = this.roomService.GetAuctionsCountByCategory(category);
-            //    viewModel = new ListRoomsViewModel
-            //    {
-            //        CategoriesItems = this.categoriesService.GetAllAsKeyValuePairs(),
-            //        ItemsPerPage = ItemsPerPage,
-            //        PageNumber = searchId,
-            //        Auctions = await this.auctionService.GetAllForSearch<ListAuctionViewModel>(category, searchId, ItemsPerPage),
-            //        Count = auctionsCount,
-            //    };
-            //}
+            else
+            {
+                roomsCount = this.roomService.RoomsCountByCategory(category);
+                viewModel = new ListRoomsViewModel
+                {
+                    CategoriesItems = this.categoryService.GetAllAsKeyValuePairs(),
+                    ItemsPerPage = ItemsPerPage,
+                    PageNumber = searchId,
+                    Rooms = await this.roomService.ListAllWithSearch<RoomViewModel>(category, searchId, ItemsPerPage),
+                    Count = roomsCount,
+                };
+            }
 
             //foreach (var auction in viewModel.Auctions)
             //{
