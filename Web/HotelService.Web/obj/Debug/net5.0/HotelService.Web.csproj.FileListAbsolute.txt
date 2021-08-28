@@ -476,3 +476,5 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Shared\_AlertPartial.cshtml.g.cs
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Room\AllInBungalow.cshtml.g.cs
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Room\AllInHotel.cshtml.g.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Room\FreeInBungalow.cshtml.g.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Room\FreeInHotel.cshtml.g.cs
