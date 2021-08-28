@@ -1,0 +1,29 @@
+﻿@model ListRoomsViewModel
+@{
+    this.ViewData["Title"] = "Rooms in Hotel";
+    var categoriesItems = this.Model.CategoriesItems.Select(x => new SelectListItem(x.Value, x.Key));
+}
+
+@if (this.TempData.ContainsKey("Message"))
+{
+    <partial name="_AlertPartial" />
+}
+
+<h1 class="text-center text-monospace text-info mt-3 mb-n3">@this.ViewData["Title"] - @this.Model.Count</h1>
+<form method="get">
+    <div class="row ml-4">
+        <label asp-for="Category"></label>
+        <div class="form-group col-md-3">
+            <select asp-for="Category" style="background-color: #F8F8FF" class="form-control" asp-items="categoriesItems"></select>
+        </div>
+        <div class="form-group col-md-3">
+            <input type="submit" class="btn btn-primary" value="Search" />
+        </div>
+    </div>
+</form>
+
+<hr />
+
+<partial name="_RoomsListPartial" model="@Model" />
+<hr />
+<partial name="_PagingSearchPartial" model="@Model" />

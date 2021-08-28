@@ -140,6 +140,68 @@
         }
       }
     },
+    "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\HotelService.Common\\HotelService.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\HotelService.Common\\HotelService.Common.csproj",
+        "projectName": "HotelService.Common",
+        "projectPath": "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\HotelService.Common\\HotelService.Common.csproj",
+        "packagesPath": "C:\\Users\\Goshicha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\HotelService.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Goshicha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.312, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\Services\\HotelService.Services.Data\\HotelService.Services.Data.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -169,6 +231,9 @@
               },
               "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\Data\\HotelService.Data.Models\\HotelService.Data.Models.csproj": {
                 "projectPath": "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\Data\\HotelService.Data.Models\\HotelService.Data.Models.csproj"
+              },
+              "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\HotelService.Common\\HotelService.Common.csproj": {
+                "projectPath": "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\HotelService.Common\\HotelService.Common.csproj"
               },
               "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\Services\\HotelService.Services.Mapping\\HotelService.Services.Mapping.csproj": {
                 "projectPath": "C:\\Users\\Goshicha\\Desktop\\gitFolder\\Hotel-service\\Services\\HotelService.Services.Mapping\\HotelService.Services.Mapping.csproj"

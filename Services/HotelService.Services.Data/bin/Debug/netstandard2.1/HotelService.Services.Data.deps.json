@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.1/": {
       "HotelService.Services.Data/1.0.0": {
         "dependencies": {
+          "HotelService.Common": "1.0.0",
           "HotelService.Data.Common": "1.0.0",
           "HotelService.Data.Models": "1.0.0",
           "HotelService.Services.Mapping": "1.0.0",
@@ -351,6 +352,11 @@
           }
         }
       },
+      "HotelService.Common/1.0.0": {
+        "runtime": {
+          "HotelService.Common.dll": {}
+        }
+      },
       "HotelService.Data.Common/1.0.0": {
         "dependencies": {
           "System.ComponentModel.Annotations": "5.0.0"
@@ -624,6 +630,11 @@
       "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "HotelService.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "HotelService.Data.Common/1.0.0": {
       "type": "project",

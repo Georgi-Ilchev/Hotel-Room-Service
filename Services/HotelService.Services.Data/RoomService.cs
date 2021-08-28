@@ -6,6 +6,7 @@
     using System.Linq;
     using System.Threading.Tasks;
 
+    using HotelService.Common;
     using HotelService.Data.Common.Repositories;
     using HotelService.Data.Models;
     using HotelService.Services.Mapping;
@@ -103,7 +104,6 @@
             }
 
             var rooms = roomsQuery
-                .Where(x => x.IsPaid == false)
                 .OrderByDescending(x => x.Id)
                 .Skip((page - 1) * itemsPerPage)
                 .Take(itemsPerPage)
@@ -123,7 +123,77 @@
             //    }
             //}
 
-            await this.roomRepository.SaveChangesAsync();
+            //await this.roomRepository.SaveChangesAsync();
+
+            return rooms;
+        }
+
+        public async Task<IEnumerable<RoomViewModel>> ListAllInHotel<TRoomViewModel>(int category, int page, int itemsPerPage = 8)
+        {
+            var roomsQuery = this.roomRepository.AllAsNoTracking().AsQueryable();
+
+            if (this.categoryRepository.All().Any(c => c.Id == category))
+            {
+                roomsQuery = roomsQuery.Where(c => c.Category.Id == category);
+            }
+
+            var rooms = roomsQuery
+                .Where(x => x.Location.Name == "Hotel")
+                .OrderByDescending(x => x.Id)
+                .Skip((page - 1) * itemsPerPage)
+                .Take(itemsPerPage)
+                .To<RoomViewModel>()
+                .ToList();
+
+            //foreach (var room in rooms)
+            //{
+            //    if (room.IsActive == true && DateTime.UtcNow.ToLocalTime() > room.ActiveTo)
+            //    {
+            //        room.IsActive = false;
+            //    }
+
+            //    if (room.IsActive == false && room.LastBidder != null)
+            //    {
+            //        room.IsSold = true;
+            //    }
+            //}
+
+            //await this.roomRepository.SaveChangesAsync();
+
+            return rooms;
+        }
+
+        public async Task<IEnumerable<RoomViewModel>> ListAllInBungalow<TRoomViewModel>(int category, int page, int itemsPerPage = 8)
+        {
+            var roomsQuery = this.roomRepository.AllAsNoTracking().AsQueryable();
+
+            if (this.categoryRepository.All().Any(c => c.Id == category))
+            {
+                roomsQuery = roomsQuery.Where(c => c.Category.Id == category);
+            }
+
+            var rooms = roomsQuery
+                .Where(x => x.Location.Name == "Bungalow")
+                .OrderByDescending(x => x.Id)
+                .Skip((page - 1) * itemsPerPage)
+                .Take(itemsPerPage)
+                .To<RoomViewModel>()
+                .ToList();
+
+            //foreach (var room in rooms)
+            //{
+            //    if (room.IsActive == true && DateTime.UtcNow.ToLocalTime() > room.ActiveTo)
+            //    {
+            //        room.IsActive = false;
+            //    }
+
+            //    if (room.IsActive == false && room.LastBidder != null)
+            //    {
+            //        room.IsSold = true;
+            //    }
+            //}
+
+            //await this.roomRepository.SaveChangesAsync();
 
             return rooms;
         }
@@ -134,10 +204,38 @@
                 .Count();
         }
 
+        public int RoomsCountInHotel()
+        {
+            return this.roomRepository.AllAsNoTracking()
+                .Where(x => x.Location.Name == GlobalConstants.LocationHotel)
+                .Count();
+        }
+
+        public int RoomsCountInBungalow()
+        {
+            return this.roomRepository.AllAsNoTracking()
+                .Where(x => x.Location.Name == GlobalConstants.LocationBungalow)
+                .Count();
+        }
+
         public int RoomsCountByCategory(int categoryId)
         {
             return this.roomRepository.AllAsNoTracking()
                 .Where(x => x.CategoryId == categoryId)
+                .Count();
+        }
+
+        public int RoomsCountByCategoryInHotel(int categoryId)
+        {
+            return this.roomRepository.AllAsNoTracking()
+                .Where(x => x.CategoryId == categoryId && x.Location.Name == GlobalConstants.LocationHotel)
+                .Count();
+        }
+
+        public int RoomsCountByCategoryInBungalow(int categoryId)
+        {
+            return this.roomRepository.AllAsNoTracking()
+                .Where(x => x.CategoryId == categoryId && x.Location.Name == GlobalConstants.LocationBungalow)
                 .Count();
         }
     }

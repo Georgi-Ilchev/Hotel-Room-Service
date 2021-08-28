@@ -16,3 +16,5 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\obj\Debug\netstandard2.1\HotelService.Services.Data.pdb
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Web.ViewModels.dll
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Web.ViewModels.pdb
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Common.dll
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Services\HotelService.Services.Data\bin\Debug\netstandard2.1\HotelService.Common.pdb

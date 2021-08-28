@@ -7,5 +7,9 @@
         public const string HotelName = "Ezeroto";
 
         public const string AdministratorRoleName = "Administrator";
+
+        public const string LocationHotel = "Hotel";
+
+        public const string LocationBungalow = "Bungalow";
     }
 }

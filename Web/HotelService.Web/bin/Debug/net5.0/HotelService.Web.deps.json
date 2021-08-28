@@ -2171,6 +2171,7 @@
       },
       "HotelService.Services.Data/1.0.0": {
         "dependencies": {
+          "HotelService.Common": "1.0.0",
           "HotelService.Data.Common": "1.0.0",
           "HotelService.Data.Models": "1.0.0",
           "HotelService.Services.Mapping": "1.0.0",

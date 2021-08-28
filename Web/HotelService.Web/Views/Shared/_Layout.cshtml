@@ -14,10 +14,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom box-shadow mb-3">
             <div class="container">
                 @*<img src="~/logo.png" width="75" height="70" alt="logo" class="navbar-brand" />
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>*@
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>*@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
@@ -38,7 +38,7 @@
                                     <a class="dropdown-item" asp-area="" asp-controller="" asp-action="">Free</a>
                                     <a class="dropdown-item" asp-area="" asp-controller="" asp-action="">Occupied</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" asp-area="" asp-controller="" asp-action="">All</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Room" asp-action="AllInHotel">All</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -47,7 +47,7 @@
                                     <a class="dropdown-item" asp-area="" asp-controller="" asp-action="">Free</a>
                                     <a class="dropdown-item" asp-area="" asp-controller="" asp-action="">Occupied</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" asp-area="" asp-controller="" asp-action="">All</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Room" asp-action="AllInBungalow">All</a>
                                 </div>
                             </li>
                         }

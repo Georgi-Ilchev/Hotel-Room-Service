@@ -122,5 +122,109 @@ namespace HotelService.Web.Controllers
 
             return this.View(viewModel);
         }
+
+        [Authorize]
+        public async Task<IActionResult> AllInHotel(int category, int id = 1, int searchId = 1)
+        {
+            const int ItemsPerPage = 8;
+
+            if (id <= 0)
+            {
+                return this.NotFound();
+            }
+
+            var roomsCount = 0;
+            var viewModel = new ListRoomsViewModel();
+
+            if (category == 0)
+            {
+                roomsCount = this.roomService.RoomsCountInHotel();
+                viewModel = new ListRoomsViewModel
+                {
+                    CategoriesItems = this.categoryService.GetAllAsKeyValuePairs(),
+                    LocationsItems = this.locationService.GetAllAsKeyValuePairs(),
+                    ItemsPerPage = ItemsPerPage,
+                    PageNumber = id,
+                    Rooms = await this.roomService.ListAllInHotel<RoomViewModel>(category, id, ItemsPerPage),
+                    Count = roomsCount,
+                };
+            }
+            else
+            {
+                roomsCount = this.roomService.RoomsCountByCategoryInHotel(category);
+                viewModel = new ListRoomsViewModel
+                {
+                    CategoriesItems = this.categoryService.GetAllAsKeyValuePairs(),
+                    ItemsPerPage = ItemsPerPage,
+                    PageNumber = searchId,
+                    Rooms = await this.roomService.ListAllInHotel<RoomViewModel>(category, searchId, ItemsPerPage),
+                    Count = roomsCount,
+                };
+            }
+
+            //foreach (var auction in viewModel.Auctions)
+            //{
+            //    await this.auctionService.UpdateDbAuction(auction.Id);
+            //}
+
+            if (category != 0)
+            {
+                this.ViewBag.CurrentCategory = category;
+            }
+
+            return this.View(viewModel);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> AllInBungalow(int category, int id = 1, int searchId = 1)
+        {
+            const int ItemsPerPage = 8;
+
+            if (id <= 0)
+            {
+                return this.NotFound();
+            }
+
+            var roomsCount = 0;
+            var viewModel = new ListRoomsViewModel();
+
+            if (category == 0)
+            {
+                roomsCount = this.roomService.RoomsCountInBungalow();
+                viewModel = new ListRoomsViewModel
+                {
+                    CategoriesItems = this.categoryService.GetAllAsKeyValuePairs(),
+                    LocationsItems = this.locationService.GetAllAsKeyValuePairs(),
+                    ItemsPerPage = ItemsPerPage,
+                    PageNumber = id,
+                    Rooms = await this.roomService.ListAllInBungalow<RoomViewModel>(category, id, ItemsPerPage),
+                    Count = roomsCount,
+                };
+            }
+            else
+            {
+                roomsCount = this.roomService.RoomsCountByCategoryInBungalow(category);
+                viewModel = new ListRoomsViewModel
+                {
+                    CategoriesItems = this.categoryService.GetAllAsKeyValuePairs(),
+                    ItemsPerPage = ItemsPerPage,
+                    PageNumber = searchId,
+                    Rooms = await this.roomService.ListAllInBungalow<RoomViewModel>(category, searchId, ItemsPerPage),
+                    Count = roomsCount,
+                };
+            }
+
+            //foreach (var auction in viewModel.Auctions)
+            //{
+            //    await this.auctionService.UpdateDbAuction(auction.Id);
+            //}
+
+            if (category != 0)
+            {
+                this.ViewBag.CurrentCategory = category;
+            }
+
+            return this.View(viewModel);
+        }
     }
 }

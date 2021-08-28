@@ -11,8 +11,20 @@
 
         Task<IEnumerable<RoomViewModel>> ListAllWithSearch<TListAuctionViewModel>(int category, int page, int itemsPerPage = 8);
 
+        Task<IEnumerable<RoomViewModel>> ListAllInHotel<TRoomViewModel>(int category, int page, int itemsPerPage = 8);
+
+        Task<IEnumerable<RoomViewModel>> ListAllInBungalow<TRoomViewModel>(int category, int page, int itemsPerPage = 8);
+
         int RoomsCount();
 
+        int RoomsCountInHotel();
+
+        int RoomsCountInBungalow();
+
         int RoomsCountByCategory(int categoryId);
+
+        int RoomsCountByCategoryInHotel(int categoryId);
+
+        int RoomsCountByCategoryInBungalow(int categoryId);
     }
 }
