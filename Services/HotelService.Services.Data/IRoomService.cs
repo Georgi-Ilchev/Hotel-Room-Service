@@ -15,9 +15,13 @@
 
         Task<IEnumerable<RoomViewModel>> ListAllFreeInHotel<TRoomViewModel>(int category, int page, int itemsPerPage = 8);
 
+        Task<IEnumerable<RoomViewModel>> ListAllTakenInHotel<TRoomViewModel>(int category, int page, int itemsPerPage = 8);
+
         Task<IEnumerable<RoomViewModel>> ListAllInBungalow<TRoomViewModel>(int category, int page, int itemsPerPage = 8);
 
         Task<IEnumerable<RoomViewModel>> ListAllFreeInBungalow<TRoomViewModel>(int category, int page, int itemsPerPage = 8);
+
+        Task<IEnumerable<RoomViewModel>> ListAllTakenInBungalow<TRoomViewModel>(int category, int page, int itemsPerPage = 8);
 
         int RoomsCount();
 
@@ -25,9 +29,13 @@
 
         int FreeRoomsCountInHotel();
 
+        int TakenRoomsCountInHotel();
+
         int RoomsCountInBungalow();
 
         int FreeRoomsCountInBungalow();
+
+        int TakenRoomsCountInBungalow();
 
         int RoomsCountByCategory(int categoryId);
 
@@ -35,8 +43,12 @@
 
         int FreeRoomsCountByCategoryInHotel(int categoryId);
 
+        int TakenRoomsCountByCategoryInHotel(int categoryId);
+
         int RoomsCountByCategoryInBungalow(int categoryId);
 
         int FreeRoomsCountByCategoryInBungalow(int categoryId);
+
+        int TakenRoomsCountByCategoryInBungalow(int categoryId);
     }
 }

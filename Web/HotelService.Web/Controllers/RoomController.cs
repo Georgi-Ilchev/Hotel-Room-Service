@@ -228,6 +228,58 @@ namespace HotelService.Web.Controllers
         }
 
         [Authorize]
+        public async Task<IActionResult> TakenInHotel(int category, int id = 1, int searchId = 1)
+        {
+            const int ItemsPerPage = 8;
+
+            if (id <= 0)
+            {
+                return this.NotFound();
+            }
+
+            var roomsCount = 0;
+            var viewModel = new ListRoomsViewModel();
+
+            if (category == 0)
+            {
+                roomsCount = this.roomService.TakenRoomsCountInHotel();
+                viewModel = new ListRoomsViewModel
+                {
+                    CategoriesItems = this.categoryService.GetAllAsKeyValuePairs(),
+                    LocationsItems = this.locationService.GetAllAsKeyValuePairs(),
+                    ItemsPerPage = ItemsPerPage,
+                    PageNumber = id,
+                    Rooms = await this.roomService.ListAllTakenInHotel<RoomViewModel>(category, id, ItemsPerPage),
+                    Count = roomsCount,
+                };
+            }
+            else
+            {
+                roomsCount = this.roomService.TakenRoomsCountByCategoryInHotel(category);
+                viewModel = new ListRoomsViewModel
+                {
+                    CategoriesItems = this.categoryService.GetAllAsKeyValuePairs(),
+                    ItemsPerPage = ItemsPerPage,
+                    PageNumber = searchId,
+                    Rooms = await this.roomService.ListAllTakenInHotel<RoomViewModel>(category, searchId, ItemsPerPage),
+                    Count = roomsCount,
+                };
+            }
+
+            //foreach (var auction in viewModel.Auctions)
+            //{
+            //    await this.auctionService.UpdateDbAuction(auction.Id);
+            //}
+
+            if (category != 0)
+            {
+                this.ViewBag.CurrentCategory = category;
+            }
+
+            return this.View(viewModel);
+        }
+
+        [Authorize]
         public async Task<IActionResult> AllInBungalow(int category, int id = 1, int searchId = 1)
         {
             const int ItemsPerPage = 8;
@@ -314,6 +366,58 @@ namespace HotelService.Web.Controllers
                     ItemsPerPage = ItemsPerPage,
                     PageNumber = searchId,
                     Rooms = await this.roomService.ListAllFreeInBungalow<RoomViewModel>(category, searchId, ItemsPerPage),
+                    Count = roomsCount,
+                };
+            }
+
+            //foreach (var auction in viewModel.Auctions)
+            //{
+            //    await this.auctionService.UpdateDbAuction(auction.Id);
+            //}
+
+            if (category != 0)
+            {
+                this.ViewBag.CurrentCategory = category;
+            }
+
+            return this.View(viewModel);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> TakenInBungalow(int category, int id = 1, int searchId = 1)
+        {
+            const int ItemsPerPage = 8;
+
+            if (id <= 0)
+            {
+                return this.NotFound();
+            }
+
+            var roomsCount = 0;
+            var viewModel = new ListRoomsViewModel();
+
+            if (category == 0)
+            {
+                roomsCount = this.roomService.TakenRoomsCountInBungalow();
+                viewModel = new ListRoomsViewModel
+                {
+                    CategoriesItems = this.categoryService.GetAllAsKeyValuePairs(),
+                    LocationsItems = this.locationService.GetAllAsKeyValuePairs(),
+                    ItemsPerPage = ItemsPerPage,
+                    PageNumber = id,
+                    Rooms = await this.roomService.ListAllTakenInBungalow<RoomViewModel>(category, id, ItemsPerPage),
+                    Count = roomsCount,
+                };
+            }
+            else
+            {
+                roomsCount = this.roomService.TakenRoomsCountByCategoryInBungalow(category);
+                viewModel = new ListRoomsViewModel
+                {
+                    CategoriesItems = this.categoryService.GetAllAsKeyValuePairs(),
+                    ItemsPerPage = ItemsPerPage,
+                    PageNumber = searchId,
+                    Rooms = await this.roomService.ListAllTakenInBungalow<RoomViewModel>(category, searchId, ItemsPerPage),
                     Count = roomsCount,
                 };
             }
