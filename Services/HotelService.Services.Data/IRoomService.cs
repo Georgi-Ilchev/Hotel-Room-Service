@@ -9,6 +9,8 @@
     {
         Task CreateAsync(CreateRoomInputModel input, string userId, string imagePath);
 
+        Task UpdateAsync(int roomId, EditRoomInputModel model);
+
         Task<IEnumerable<RoomViewModel>> ListAllWithSearch<TListAuctionViewModel>(int category, int page, int itemsPerPage = 8);
 
         Task<IEnumerable<RoomViewModel>> ListAllInHotel<TRoomViewModel>(int category, int page, int itemsPerPage = 8);
@@ -54,5 +56,7 @@
         T GetById<T>(int roomId);
 
         bool IsRoomExisting(int roomId);
+
+        bool IsOwnedByUser(string userId, int roomId);
     }
 }

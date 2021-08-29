@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using HotelService.Common;
 
 namespace HotelService.Web.Controllers
 {
@@ -66,9 +67,52 @@ namespace HotelService.Web.Controllers
                 return this.View(input);
             }
 
-            this.TempData["Message"] = "The room was successfully created.";
+            this.TempData["Message"] = GlobalConstants.SuccessfullyCreated;
 
             return this.Redirect("/Room/All");
+        }
+
+        [Authorize]
+        public IActionResult Edit(int roomId)
+        {
+            var userId = this.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            if (!this.roomService.IsOwnedByUser(userId, roomId))
+            {
+                return this.Unauthorized();
+            }
+
+            var input = this.roomService.GetById<EditRoomInputModel>(roomId);
+            input.CategoriesItems = this.categoryService.GetAllAsKeyValuePairs();
+            input.LocationItems = this.locationService.GetAllAsKeyValuePairs();
+
+            return this.View(input);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Edit(int roomId, EditRoomInputModel room)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                room.CategoriesItems = this.categoryService.GetAllAsKeyValuePairs();
+                room.LocationItems = this.locationService.GetAllAsKeyValuePairs();
+
+                return this.View(room);
+            }
+
+            var userId = this.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            if (!this.roomService.IsOwnedByUser(userId, roomId))
+            {
+                return this.Unauthorized();
+            }
+
+            await this.roomService.UpdateAsync(roomId, room);
+
+            this.TempData["Message"] = GlobalConstants.SuccessfullyEdited;
+
+            return this.RedirectToAction(nameof(this.SingleRoom), new { roomId = roomId });
         }
 
         [Authorize]

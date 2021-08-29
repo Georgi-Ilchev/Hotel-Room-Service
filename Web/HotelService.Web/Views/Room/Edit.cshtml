@@ -1,0 +1,70 @@
+﻿@model EditRoomInputModel
+@{
+    ViewData["Title"] = "Edit Room";
+    var categoriesItems = this.Model.CategoriesItems.Select(x => new SelectListItem(x.Value, x.Key));
+    var locationsItems = this.Model.LocationItems.Select(x => new SelectListItem(x.Value, x.Key));
+}
+
+<h1 class="text-center text-monospace text-info mt-3">@ViewData["Title"]</h1>
+<hr />
+
+<form method="post" class="col-md-6 offset-md-3" id="editForm">
+    <div asp-validation-summary="All" class="text-warning"></div>
+
+    <div class="form-floating mb-3">
+        <input asp-for="Name" style="background-color: #F8F8FF" class="form-control" placeholder="Name" />
+        <label asp-for="Name"></label>
+        <span asp-validation-for="Name" class="text-warning"></span>
+    </div>
+
+    <div class="form-floating mb-3">
+        <textarea asp-for="Description" style="background-color: #F8F8FF" class="form-control" placeholder="Description"></textarea>
+        <label asp-for="Description"></label>
+        <span asp-validation-for="Description" class="text-warning"></span>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input asp-for="Price" style="background-color: #F8F8FF" class="form-control" placeholder="Price" />
+        <label asp-for="Price"></label>
+        <span asp-validation-for="Price" class="text-warning"></span>
+    </div>
+
+    <div class="form-floating mb-3">
+        <select asp-for="CategoryId" style="background-color: #F8F8FF" asp-items="categoriesItems" class="form-control"></select>
+        <label asp-for="CategoryId"></label>
+        <span asp-validation-for="CategoryId" class="text-warning"></span>
+    </div>
+
+    <div class="form-floating mb-3">
+        <select asp-for="LocationId" style="background-color: #F8F8FF" asp-items="locationsItems" class="form-control"></select>
+        <label asp-for="LocationId"></label>
+        <span asp-validation-for="LocationId" class="text-warning"></span>
+    </div>
+
+    <hr />
+    <input type="hidden" asp-for="Id" />
+</form>
+<div class="col-md-6 offset-md-3">
+    <button type="submit" class="btn-success btn-lg " data-toggle="modal" data-target="#editModal">Save changes</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Confirmation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Do you want to save changes to this document before closing?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="editForm.submit()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

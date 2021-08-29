@@ -94,6 +94,30 @@
             await this.roomRepository.SaveChangesAsync();
         }
 
+        public async Task UpdateAsync(int roomId, EditRoomInputModel model)
+        {
+            if (!this.categoryRepository.All().Any(c => c.Id == model.CategoryId))
+            {
+                throw new Exception(GlobalConstants.InvalidType);
+            }
+
+            if (!this.locationRepository.All().Any(c => c.Id == model.LocationId))
+            {
+                throw new Exception(GlobalConstants.InvalidLocation);
+            }
+
+            var room = this.roomRepository.All()
+                .FirstOrDefault(x => x.Id == roomId);
+
+            room.Name = model.Name;
+            room.Description = model.Description;
+            room.CategoryId = model.CategoryId;
+            room.LocationId = model.LocationId;
+            room.Price = model.Price;
+
+            await this.roomRepository.SaveChangesAsync();
+        }
+
         public async Task<IEnumerable<RoomViewModel>> ListAllWithSearch<TRoomViewModel>(int category, int page, int itemsPerPage = 8)
         {
             var roomsQuery = this.roomRepository.AllAsNoTracking().AsQueryable();
@@ -449,6 +473,12 @@
         {
             return this.roomRepository.AllAsNoTracking()
                 .Any(x => x.Id == roomId);
+        }
+
+        public bool IsOwnedByUser(string userId, int roomId)
+        {
+            return this.roomRepository.AllAsNoTracking()
+                .Any(x => x.Id == roomId && x.UserId == userId);
         }
     }
 }

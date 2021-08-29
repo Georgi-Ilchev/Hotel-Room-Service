@@ -69,23 +69,26 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <p class="timestamp">@Model.Description</p>
+                    <span class="timestamp">@Model.Description</span>
                 </div>
             </div>
 
             <hr />
 
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="description">Settle: @Model.SettleAsString</p>
+            @if (Model.SettleAsString != "01.01.0001 00:00")
+            {
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="description">Settle: @Model.SettleAsString</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="description">Leave: @Model.LeavingAsString</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="description">Leave: @Model.LeavingAsString</p>
+                    </div>
                 </div>
-            </div>
+            }
 
             @{
                 var status = string.Empty;
@@ -113,6 +116,11 @@
             </ul>
 
             <hr />
+
+            <td>
+                <a class="btn btn-block btn-dark text-white mb-2" asp-action="Edit" asp-route-roomId="@Model.Id">Edit</a>
+            </td>
+
         </div>
     </div>
 </div>
