@@ -434,5 +434,21 @@
                 .Where(x => x.CategoryId == categoryId && x.Location.Name == GlobalConstants.LocationBungalow && x.IsFree == false)
                 .Count();
         }
+
+        public T GetById<T>(int roomId)
+        {
+            var room = this.roomRepository.AllAsNoTracking()
+                .Where(x => x.Id == roomId)
+                .To<T>()
+                .FirstOrDefault();
+
+            return room;
+        }
+
+        public bool IsRoomExisting(int roomId)
+        {
+            return this.roomRepository.AllAsNoTracking()
+                .Any(x => x.Id == roomId);
+        }
     }
 }

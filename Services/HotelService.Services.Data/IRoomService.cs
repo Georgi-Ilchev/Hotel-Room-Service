@@ -50,5 +50,9 @@
         int FreeRoomsCountByCategoryInBungalow(int categoryId);
 
         int TakenRoomsCountByCategoryInBungalow(int categoryId);
+
+        T GetById<T>(int roomId);
+
+        bool IsRoomExisting(int roomId);
     }
 }

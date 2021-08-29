@@ -434,5 +434,18 @@ namespace HotelService.Web.Controllers
 
             return this.View(viewModel);
         }
+
+        [Authorize]
+        public async Task<IActionResult> SingleRoom(int roomId)
+        {
+            if (!this.roomService.IsRoomExisting(roomId))
+            {
+                return this.NotFound();
+            }
+
+            var room = this.roomService.GetById<SingleRoomViewModel>(roomId);
+
+            return this.View(room);
+        }
     }
 }
