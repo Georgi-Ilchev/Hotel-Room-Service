@@ -1,9 +1,38 @@
 ﻿@using HotelService.Common
+@model IndexViewModel
 @{
     this.ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to @GlobalConstants.SystemName!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@{
+    var oneFreeRoom = "FREE ROOM IN";
+    var manyFreeRooms = "FREE ROOMS IN";
+    var hotel = "HOTEL";
+    var bungalow = "BUNGALOW";
+}
+
+<section class="img-fluid.max-width: 100% mt-n5 ml-n3 mr-n2"
+         style="background-image: url('https://pateshestvia.net/wp-content/uploads/2018/11/DSC_0094-2.jpg'); background-repeat: repeat; ">
+    <div style="height: 28vh;"></div>
+    <div class="text-center">
+        <h1 class="display-1 text-white fw-bold mt-n5 mb-5">Welcome to <span class="text-success">'@GlobalConstants.SecondarySystemName'!</span></h1>
+        @if (Model.FreeRoomsCountInHotel == 1)
+        {
+            <h1 class="display-2 text-white fw-bold">@Model.FreeRoomsCountInHotel @oneFreeRoom @hotel</h1>
+        }
+        else
+        {
+            <h1 class="display-2 text-white fw-bold">@Model.FreeRoomsCountInHotel @manyFreeRooms @hotel</h1>
+        }
+        <h1 class="text-white">&</h1>
+        @if (Model.FreeRoomsCountInBungalow == 1)
+        {
+            <h1 class="display-2 text-white fw-bold">@Model.FreeRoomsCountInBungalow @oneFreeRoom @bungalow</h1>
+        }
+        else
+        {
+            <h1 class="display-2 text-white fw-bold">@Model.FreeRoomsCountInBungalow @manyFreeRooms @bungalow</h1>
+        }
+    </div>
+    <br /><br /><br /><br />
+</section>

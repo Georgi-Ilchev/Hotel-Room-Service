@@ -482,3 +482,4 @@ C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Room\TakenInHotel.cshtml.g.cs
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Room\SingleRoom.cshtml.g.cs
 C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Room\Edit.cshtml.g.cs
+C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\obj\Debug\net5.0\Razor\Views\Room\AddGuest.cshtml.g.cs

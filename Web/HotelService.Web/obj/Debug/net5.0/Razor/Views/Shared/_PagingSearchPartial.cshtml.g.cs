@@ -33,8 +33,15 @@ using HotelService.Web.ViewModels.Rooms;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\Views\_ViewImports.cshtml"
+using HotelService.Web.ViewModels.Home;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a753952f46e3e221e4e7d33acb843509e0a5905d", @"/Views/Shared/_PagingSearchPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a604be4b9dd4d445c0114d1168bee0b362f16f28", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8518155818b3f0aa4751c69edf4895f958edabca", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__PagingSearchPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<HotelService.Web.ViewModels.PagingViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("page-link"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -105,7 +112,7 @@ using HotelService.Web.ViewModels.Rooms;
             ), 291, 54, false);
             EndWriteAttribute();
             WriteLiteral(">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d5577", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d5795", async() => {
                 WriteLiteral("\r\n                    <span aria-hidden=\"true\">&laquo;</span>\r\n                ");
             }
             );
@@ -146,7 +153,7 @@ using HotelService.Web.ViewModels.Rooms;
 #line hidden
 #nullable disable
             WriteLiteral("                    <li class=\"page-item\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d8162", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d8380", async() => {
 #nullable restore
 #line 20 "C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\Views\Shared\_PagingSearchPartial.cshtml"
                                                                                                                   Write(i);
@@ -221,7 +228,7 @@ using HotelService.Web.ViewModels.Rooms;
 #line hidden
 #nullable disable
             WriteLiteral("                    <li class=\"page-item\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d12522", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d12740", async() => {
 #nullable restore
 #line 30 "C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\Views\Shared\_PagingSearchPartial.cshtml"
                                                                                                                   Write(i);
@@ -301,7 +308,7 @@ using HotelService.Web.ViewModels.Rooms;
             ), 1383, 50, false);
             EndWriteAttribute();
             WriteLiteral(">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d17077", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d17295", async() => {
                 WriteLiteral("\r\n                    <span aria-hidden=\"true\">&raquo;</span>\r\n                ");
             }
             );
@@ -376,7 +383,7 @@ else
             ), 1829, 54, false);
             EndWriteAttribute();
             WriteLiteral(">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d21546", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d21764", async() => {
                 WriteLiteral("\r\n                    <span aria-hidden=\"true\">&laquo;</span>\r\n                ");
             }
             );
@@ -428,7 +435,7 @@ else
 #line hidden
 #nullable disable
             WriteLiteral("                    <li class=\"page-item\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d24961", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d25179", async() => {
 #nullable restore
 #line 54 "C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\Views\Shared\_PagingSearchPartial.cshtml"
                                                                                                                         Write(i);
@@ -503,7 +510,7 @@ else
 #line hidden
 #nullable disable
             WriteLiteral("                    <li class=\"page-item\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d29352", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d29570", async() => {
 #nullable restore
 #line 64 "C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\Views\Shared\_PagingSearchPartial.cshtml"
                                                                                                                         Write(i);
@@ -583,7 +590,7 @@ else
             ), 2977, 50, false);
             EndWriteAttribute();
             WriteLiteral(">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d33937", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a753952f46e3e221e4e7d33acb843509e0a5905d34155", async() => {
                 WriteLiteral("\r\n                    <span aria-hidden=\"true\">&raquo;</span>\r\n                ");
             }
             );

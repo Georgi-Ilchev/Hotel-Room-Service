@@ -8,6 +8,10 @@
     <partial name="_AlertPartial" />
 }
 
+@{
+    var userId = this.User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value;
+}
+
 <h1 class="text-info text-monospace mt-3 ml-5">@this.ViewData["Title"]</h1>
 <hr />
 
@@ -117,9 +121,17 @@
 
             <hr />
 
-            <td>
-                <a class="btn btn-block btn-dark text-white mb-2" asp-action="Edit" asp-route-roomId="@Model.Id">Edit</a>
-            </td>
+            @{
+                if (Model.UserId == userId)
+                {
+                    <td>
+                        <a class="btn btn-block btn-success text-white mb-2" asp-action="AddGuest" asp-route-roomId="@Model.Id">Add Guest</a>
+                        <a class="btn btn-block btn-dark text-white mb-2" asp-action="Edit" asp-route-roomId="@Model.Id">Edit</a>
+                    </td>
+                }
+            }
+
+
 
         </div>
     </div>

@@ -4,6 +4,8 @@
     {
         public const string SystemName = "HotelService";
 
+        public const string SecondarySystemName = "Hotel-Service Ezeroto";
+
         public const string HotelName = "Ezeroto";
 
         public const string AdministratorRoleName = "Administrator";

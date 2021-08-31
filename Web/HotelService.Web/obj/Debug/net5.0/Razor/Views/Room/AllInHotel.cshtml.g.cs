@@ -33,8 +33,15 @@ using HotelService.Web.ViewModels.Rooms;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\Goshicha\Desktop\gitFolder\Hotel-service\Web\HotelService.Web\Views\_ViewImports.cshtml"
+using HotelService.Web.ViewModels.Home;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7257875d53e0d26ce66d76d0aae24f663ff5fc08", @"/Views/Room/AllInHotel.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a604be4b9dd4d445c0114d1168bee0b362f16f28", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8518155818b3f0aa4751c69edf4895f958edabca", @"/Views/_ViewImports.cshtml")]
     public class Views_Room_AllInHotel : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ListRoomsViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "_AlertPartial", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -90,7 +97,7 @@ using HotelService.Web.ViewModels.Rooms;
 #line hidden
 #nullable disable
             WriteLiteral("    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7257875d53e0d26ce66d76d0aae24f663ff5fc086454", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7257875d53e0d26ce66d76d0aae24f663ff5fc086672", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -129,9 +136,9 @@ using HotelService.Web.ViewModels.Rooms;
 #line hidden
 #nullable disable
             WriteLiteral("</h1>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7257875d53e0d26ce66d76d0aae24f663ff5fc088481", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7257875d53e0d26ce66d76d0aae24f663ff5fc088699", async() => {
                 WriteLiteral("\r\n    <div class=\"row ml-4\">\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7257875d53e0d26ce66d76d0aae24f663ff5fc088779", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7257875d53e0d26ce66d76d0aae24f663ff5fc088997", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper>();
@@ -152,7 +159,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n        <div class=\"form-group col-md-3\">\r\n            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7257875d53e0d26ce66d76d0aae24f663ff5fc0810351", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7257875d53e0d26ce66d76d0aae24f663ff5fc0810569", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper>();
@@ -199,7 +206,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items = categoriesItems;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n<hr />\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7257875d53e0d26ce66d76d0aae24f663ff5fc0813904", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7257875d53e0d26ce66d76d0aae24f663ff5fc0814122", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -222,7 +229,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = Model;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n<hr />\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7257875d53e0d26ce66d76d0aae24f663ff5fc0815502", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7257875d53e0d26ce66d76d0aae24f663ff5fc0815720", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

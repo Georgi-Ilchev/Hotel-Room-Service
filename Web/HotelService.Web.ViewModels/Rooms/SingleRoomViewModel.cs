@@ -28,6 +28,8 @@
 
         public string UserUserName { get; set; }
 
+        public string UserId { get; set; }
+
         public decimal Price { get; set; }
 
         public bool IsFree { get; set; }

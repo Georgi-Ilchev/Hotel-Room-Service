@@ -116,6 +116,14 @@ namespace HotelService.Web.Controllers
         }
 
         [Authorize]
+        public IActionResult AddGuest(int roomId)
+        {
+            var viewModel = this.roomService.GetById<AddGuestFormModel>(roomId);
+
+            return this.View(viewModel);
+        }
+
+        [Authorize]
         public async Task<IActionResult> All(int category, int id = 1, int searchId = 1)
         {
             const int ItemsPerPage = 8;
