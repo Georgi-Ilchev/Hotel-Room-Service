@@ -21,7 +21,7 @@
 
 <h3 class="text-center">@ViewBag.Title</h3>
 
-<section>
+@*<section>
     <div class="container-fluid ">
         <div class="row justify-content-center mx-0">
             <div class="col-lg-6">
@@ -79,9 +79,52 @@
             </div>
         </div>
     </div>
-</section>
+</section>*@
 
-@section Scripts {
+@*<div class="container">
+        <div class='col-md-5'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker6'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class='col-md-5'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker7'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @section Scripts{
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker6').datetimepicker();
+                $('#datetimepicker7').datetimepicker({
+                    useCurrent: true //Important! See issue #1075
+                });
+                $("#datetimepicker6").on("dp.change", function (e) {
+                    $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+                });
+                $("#datetimepicker7").on("dp.change", function (e) {
+                    $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+                });
+            });
+        </script>
+    }*@
+
+<ejs-schedule id="schedule"></ejs-schedule>
+
+@*@section Scripts {
     <script src="~/js/bootstrap-datepicker.js" asp-append-version="true"></script>
     <script src="~/js/date-picker.js" asp-append-version="true"></script>
     <script type="text/javascript">
@@ -89,4 +132,4 @@
             ignore: ""
         })
     </script>
-}
+}*@

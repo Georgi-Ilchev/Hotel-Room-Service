@@ -337,6 +337,28 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
+      "bootstrap/3.4.1": {
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
+      "bootstrap.less/3.4.1": {
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
+      "Bootstrap.v3.Datetimepicker/4.17.49": {
+        "dependencies": {
+          "Moment.js": "2.9.0",
+          "bootstrap.less": "3.4.1"
+        }
+      },
+      "Bootstrap.v3.Datetimepicker.CSS/4.17.49": {
+        "dependencies": {
+          "Moment.js": "2.9.0",
+          "bootstrap": "3.4.1"
+        }
+      },
       "BuildBundlerMinifier/3.2.449": {},
       "Humanizer.Core/2.2.0": {
         "dependencies": {
@@ -349,6 +371,7 @@
           }
         }
       },
+      "jQuery/1.9.1": {},
       "Microsoft.AspNetCore.Cryptography.Internal/5.0.8": {
         "runtime": {
           "lib/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
@@ -1727,6 +1750,7 @@
           "Microsoft.NETCore.Platforms": "5.0.0"
         }
       },
+      "Moment.js/2.9.0": {},
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -3023,6 +3047,8 @@
       },
       "HotelService.Web/1.0.0": {
         "dependencies": {
+          "Bootstrap.v3.Datetimepicker": "4.17.49",
+          "Bootstrap.v3.Datetimepicker.CSS": "4.17.49",
           "BuildBundlerMinifier": "3.2.449",
           "HotelService.Common": "1.0.0",
           "HotelService.Data": "1.0.0",
@@ -4722,6 +4748,34 @@
       "path": "automapper/10.1.1",
       "hashPath": "automapper.10.1.1.nupkg.sha512"
     },
+    "bootstrap/3.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rnqnZV4sFAgB240hnLRwqoUaV2DfzrYsc6PbsYzRTObrrucLZyvb+8F1yTVT1sDbXMi/NXlyRmiL6wF+d4ZJMA==",
+      "path": "bootstrap/3.4.1",
+      "hashPath": "bootstrap.3.4.1.nupkg.sha512"
+    },
+    "bootstrap.less/3.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G/laxBbHVHq4G7LCbfRLISrJf8wjaMsx7qpEDzAorUr+jbl66xP5Pd7IPmqAIi5u8six7/ETv9M4nU7amvbN7g==",
+      "path": "bootstrap.less/3.4.1",
+      "hashPath": "bootstrap.less.3.4.1.nupkg.sha512"
+    },
+    "Bootstrap.v3.Datetimepicker/4.17.49": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dBA3TmQCXJ7xZuxQo0IekWJog0dpuS5fgCo8Mjho4To06+pFzEOFn/qPxZ8IlxvVuwG3c3rBIXJ7dRgflsEtqg==",
+      "path": "bootstrap.v3.datetimepicker/4.17.49",
+      "hashPath": "bootstrap.v3.datetimepicker.4.17.49.nupkg.sha512"
+    },
+    "Bootstrap.v3.Datetimepicker.CSS/4.17.49": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L9cJ+BibhmOw/O40CnuOGlWpgculIszHMR6Kov1GNV8IYijI04LRWl2moSW4ByzN6+toqj3LI+3FF8ff+0YXeQ==",
+      "path": "bootstrap.v3.datetimepicker.css/4.17.49",
+      "hashPath": "bootstrap.v3.datetimepicker.css.4.17.49.nupkg.sha512"
+    },
     "BuildBundlerMinifier/3.2.449": {
       "type": "package",
       "serviceable": true,
@@ -4735,6 +4789,13 @@
       "sha512": "sha512-rsYXB7+iUPP8AHgQ8JP2UZI2xK2KhjcdGr9E6zX3CsZaTLCaw8M35vaAJRo1rfxeaZEVMuXeaquLVCkZ7JcZ5Q==",
       "path": "humanizer.core/2.2.0",
       "hashPath": "humanizer.core.2.2.0.nupkg.sha512"
+    },
+    "jQuery/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HiX9icLyiJGgiL5EOIn0d1MBPHVV2M9mzWT4mANdniDNR51RvAFTyKEXEd2+5yQJ4PJ5xePOR61Vjj/omQzYcw==",
+      "path": "jquery/1.9.1",
+      "hashPath": "jquery.1.9.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/5.0.8": {
       "type": "package",
@@ -5323,6 +5384,13 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "Moment.js/2.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4rhbvFzmgXp/gjvwjxt9Qjmdz+2CD9T99erXEDtZHlYxaI06F9A4628/Vpxklm8D9RmwJjKjp1244FwEh+a5WQ==",
+      "path": "moment.js/2.9.0",
+      "hashPath": "moment.js.2.9.0.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",

@@ -15,6 +15,32 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
+      "bootstrap/3.4.1": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "[1.9.1, 4.0.0)"
+        }
+      },
+      "bootstrap.less/3.4.1": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "[1.9.1, 4.0.0)"
+        }
+      },
+      "Bootstrap.v3.Datetimepicker/4.17.49": {
+        "type": "package",
+        "dependencies": {
+          "Moment.js": "2.9.0",
+          "bootstrap.Less": "3.4.1"
+        }
+      },
+      "Bootstrap.v3.Datetimepicker.CSS/4.17.49": {
+        "type": "package",
+        "dependencies": {
+          "Moment.js": "2.9.0",
+          "bootstrap": "3.4.1"
+        }
+      },
       "BuildBundlerMinifier/3.2.449": {
         "type": "package",
         "build": {
@@ -32,6 +58,9 @@
         "runtime": {
           "lib/netstandard1.0/Humanizer.dll": {}
         }
+      },
+      "jQuery/1.9.1": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cryptography.Internal/5.0.8": {
         "type": "package",
@@ -1621,6 +1650,9 @@
             "rid": "win"
           }
         }
+      },
+      "Moment.js/2.9.0": {
+        "type": "package"
       },
       "NETStandard.Library/1.6.1": {
         "type": "package",
@@ -3670,6 +3702,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Bootstrap.v3.Datetimepicker": "4.17.49",
+          "Bootstrap.v3.Datetimepicker.CSS": "4.17.49",
           "BuildBundlerMinifier": "3.2.449",
           "HotelService.Common": "1.0.0",
           "HotelService.Data": "1.0.0",
@@ -3742,6 +3776,246 @@
         "lib/netstandard2.0/AutoMapper.xml"
       ]
     },
+    "bootstrap/3.4.1": {
+      "sha512": "rnqnZV4sFAgB240hnLRwqoUaV2DfzrYsc6PbsYzRTObrrucLZyvb+8F1yTVT1sDbXMi/NXlyRmiL6wF+d4ZJMA==",
+      "type": "package",
+      "path": "bootstrap/3.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "bootstrap.3.4.1.nupkg.sha512",
+        "bootstrap.nuspec",
+        "content/Content/bootstrap-theme.css",
+        "content/Content/bootstrap-theme.css.map",
+        "content/Content/bootstrap-theme.min.css",
+        "content/Content/bootstrap-theme.min.css.map",
+        "content/Content/bootstrap.css",
+        "content/Content/bootstrap.css.map",
+        "content/Content/bootstrap.min.css",
+        "content/Content/bootstrap.min.css.map",
+        "content/Scripts/bootstrap.js",
+        "content/Scripts/bootstrap.min.js",
+        "content/fonts/glyphicons-halflings-regular.eot",
+        "content/fonts/glyphicons-halflings-regular.svg",
+        "content/fonts/glyphicons-halflings-regular.ttf",
+        "content/fonts/glyphicons-halflings-regular.woff",
+        "content/fonts/glyphicons-halflings-regular.woff2",
+        "contentFiles/Content/bootstrap-theme.css",
+        "contentFiles/Content/bootstrap-theme.css.map",
+        "contentFiles/Content/bootstrap-theme.min.css",
+        "contentFiles/Content/bootstrap-theme.min.css.map",
+        "contentFiles/Content/bootstrap.css",
+        "contentFiles/Content/bootstrap.css.map",
+        "contentFiles/Content/bootstrap.min.css",
+        "contentFiles/Content/bootstrap.min.css.map",
+        "contentFiles/Scripts/bootstrap.js",
+        "contentFiles/Scripts/bootstrap.min.js",
+        "contentFiles/fonts/glyphicons-halflings-regular.eot",
+        "contentFiles/fonts/glyphicons-halflings-regular.svg",
+        "contentFiles/fonts/glyphicons-halflings-regular.ttf",
+        "contentFiles/fonts/glyphicons-halflings-regular.woff",
+        "contentFiles/fonts/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "bootstrap.less/3.4.1": {
+      "sha512": "G/laxBbHVHq4G7LCbfRLISrJf8wjaMsx7qpEDzAorUr+jbl66xP5Pd7IPmqAIi5u8six7/ETv9M4nU7amvbN7g==",
+      "type": "package",
+      "path": "bootstrap.less/3.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "bootstrap.less.3.4.1.nupkg.sha512",
+        "bootstrap.less.nuspec",
+        "content/Content/bootstrap/alerts.less",
+        "content/Content/bootstrap/badges.less",
+        "content/Content/bootstrap/bootstrap.less",
+        "content/Content/bootstrap/breadcrumbs.less",
+        "content/Content/bootstrap/button-groups.less",
+        "content/Content/bootstrap/buttons.less",
+        "content/Content/bootstrap/carousel.less",
+        "content/Content/bootstrap/close.less",
+        "content/Content/bootstrap/code.less",
+        "content/Content/bootstrap/component-animations.less",
+        "content/Content/bootstrap/dropdowns.less",
+        "content/Content/bootstrap/forms.less",
+        "content/Content/bootstrap/glyphicons.less",
+        "content/Content/bootstrap/grid.less",
+        "content/Content/bootstrap/input-groups.less",
+        "content/Content/bootstrap/jumbotron.less",
+        "content/Content/bootstrap/labels.less",
+        "content/Content/bootstrap/list-group.less",
+        "content/Content/bootstrap/media.less",
+        "content/Content/bootstrap/mixins.less",
+        "content/Content/bootstrap/mixins/alerts.less",
+        "content/Content/bootstrap/mixins/background-variant.less",
+        "content/Content/bootstrap/mixins/border-radius.less",
+        "content/Content/bootstrap/mixins/buttons.less",
+        "content/Content/bootstrap/mixins/center-block.less",
+        "content/Content/bootstrap/mixins/clearfix.less",
+        "content/Content/bootstrap/mixins/forms.less",
+        "content/Content/bootstrap/mixins/gradients.less",
+        "content/Content/bootstrap/mixins/grid-framework.less",
+        "content/Content/bootstrap/mixins/grid.less",
+        "content/Content/bootstrap/mixins/hide-text.less",
+        "content/Content/bootstrap/mixins/image.less",
+        "content/Content/bootstrap/mixins/labels.less",
+        "content/Content/bootstrap/mixins/list-group.less",
+        "content/Content/bootstrap/mixins/nav-divider.less",
+        "content/Content/bootstrap/mixins/nav-vertical-align.less",
+        "content/Content/bootstrap/mixins/opacity.less",
+        "content/Content/bootstrap/mixins/pagination.less",
+        "content/Content/bootstrap/mixins/panels.less",
+        "content/Content/bootstrap/mixins/progress-bar.less",
+        "content/Content/bootstrap/mixins/reset-filter.less",
+        "content/Content/bootstrap/mixins/reset-text.less",
+        "content/Content/bootstrap/mixins/resize.less",
+        "content/Content/bootstrap/mixins/responsive-visibility.less",
+        "content/Content/bootstrap/mixins/size.less",
+        "content/Content/bootstrap/mixins/tab-focus.less",
+        "content/Content/bootstrap/mixins/table-row.less",
+        "content/Content/bootstrap/mixins/text-emphasis.less",
+        "content/Content/bootstrap/mixins/text-overflow.less",
+        "content/Content/bootstrap/mixins/vendor-prefixes.less",
+        "content/Content/bootstrap/modals.less",
+        "content/Content/bootstrap/navbar.less",
+        "content/Content/bootstrap/navs.less",
+        "content/Content/bootstrap/normalize.less",
+        "content/Content/bootstrap/pager.less",
+        "content/Content/bootstrap/pagination.less",
+        "content/Content/bootstrap/panels.less",
+        "content/Content/bootstrap/popovers.less",
+        "content/Content/bootstrap/print.less",
+        "content/Content/bootstrap/progress-bars.less",
+        "content/Content/bootstrap/responsive-embed.less",
+        "content/Content/bootstrap/responsive-utilities.less",
+        "content/Content/bootstrap/scaffolding.less",
+        "content/Content/bootstrap/tables.less",
+        "content/Content/bootstrap/theme.less",
+        "content/Content/bootstrap/thumbnails.less",
+        "content/Content/bootstrap/tooltip.less",
+        "content/Content/bootstrap/type.less",
+        "content/Content/bootstrap/utilities.less",
+        "content/Content/bootstrap/variables.less",
+        "content/Content/bootstrap/wells.less",
+        "content/Content/fonts/glyphicons-halflings-regular.eot",
+        "content/Content/fonts/glyphicons-halflings-regular.svg",
+        "content/Content/fonts/glyphicons-halflings-regular.ttf",
+        "content/Content/fonts/glyphicons-halflings-regular.woff",
+        "content/Content/fonts/glyphicons-halflings-regular.woff2",
+        "content/Scripts/bootstrap.js",
+        "content/Scripts/bootstrap.min.js",
+        "contentFiles/Content/bootstrap/alerts.less",
+        "contentFiles/Content/bootstrap/badges.less",
+        "contentFiles/Content/bootstrap/bootstrap.less",
+        "contentFiles/Content/bootstrap/breadcrumbs.less",
+        "contentFiles/Content/bootstrap/button-groups.less",
+        "contentFiles/Content/bootstrap/buttons.less",
+        "contentFiles/Content/bootstrap/carousel.less",
+        "contentFiles/Content/bootstrap/close.less",
+        "contentFiles/Content/bootstrap/code.less",
+        "contentFiles/Content/bootstrap/component-animations.less",
+        "contentFiles/Content/bootstrap/dropdowns.less",
+        "contentFiles/Content/bootstrap/forms.less",
+        "contentFiles/Content/bootstrap/glyphicons.less",
+        "contentFiles/Content/bootstrap/grid.less",
+        "contentFiles/Content/bootstrap/input-groups.less",
+        "contentFiles/Content/bootstrap/jumbotron.less",
+        "contentFiles/Content/bootstrap/labels.less",
+        "contentFiles/Content/bootstrap/list-group.less",
+        "contentFiles/Content/bootstrap/media.less",
+        "contentFiles/Content/bootstrap/mixins.less",
+        "contentFiles/Content/bootstrap/mixins/alerts.less",
+        "contentFiles/Content/bootstrap/mixins/background-variant.less",
+        "contentFiles/Content/bootstrap/mixins/border-radius.less",
+        "contentFiles/Content/bootstrap/mixins/buttons.less",
+        "contentFiles/Content/bootstrap/mixins/center-block.less",
+        "contentFiles/Content/bootstrap/mixins/clearfix.less",
+        "contentFiles/Content/bootstrap/mixins/forms.less",
+        "contentFiles/Content/bootstrap/mixins/gradients.less",
+        "contentFiles/Content/bootstrap/mixins/grid-framework.less",
+        "contentFiles/Content/bootstrap/mixins/grid.less",
+        "contentFiles/Content/bootstrap/mixins/hide-text.less",
+        "contentFiles/Content/bootstrap/mixins/image.less",
+        "contentFiles/Content/bootstrap/mixins/labels.less",
+        "contentFiles/Content/bootstrap/mixins/list-group.less",
+        "contentFiles/Content/bootstrap/mixins/nav-divider.less",
+        "contentFiles/Content/bootstrap/mixins/nav-vertical-align.less",
+        "contentFiles/Content/bootstrap/mixins/opacity.less",
+        "contentFiles/Content/bootstrap/mixins/pagination.less",
+        "contentFiles/Content/bootstrap/mixins/panels.less",
+        "contentFiles/Content/bootstrap/mixins/progress-bar.less",
+        "contentFiles/Content/bootstrap/mixins/reset-filter.less",
+        "contentFiles/Content/bootstrap/mixins/reset-text.less",
+        "contentFiles/Content/bootstrap/mixins/resize.less",
+        "contentFiles/Content/bootstrap/mixins/responsive-visibility.less",
+        "contentFiles/Content/bootstrap/mixins/size.less",
+        "contentFiles/Content/bootstrap/mixins/tab-focus.less",
+        "contentFiles/Content/bootstrap/mixins/table-row.less",
+        "contentFiles/Content/bootstrap/mixins/text-emphasis.less",
+        "contentFiles/Content/bootstrap/mixins/text-overflow.less",
+        "contentFiles/Content/bootstrap/mixins/vendor-prefixes.less",
+        "contentFiles/Content/bootstrap/modals.less",
+        "contentFiles/Content/bootstrap/navbar.less",
+        "contentFiles/Content/bootstrap/navs.less",
+        "contentFiles/Content/bootstrap/normalize.less",
+        "contentFiles/Content/bootstrap/pager.less",
+        "contentFiles/Content/bootstrap/pagination.less",
+        "contentFiles/Content/bootstrap/panels.less",
+        "contentFiles/Content/bootstrap/popovers.less",
+        "contentFiles/Content/bootstrap/print.less",
+        "contentFiles/Content/bootstrap/progress-bars.less",
+        "contentFiles/Content/bootstrap/responsive-embed.less",
+        "contentFiles/Content/bootstrap/responsive-utilities.less",
+        "contentFiles/Content/bootstrap/scaffolding.less",
+        "contentFiles/Content/bootstrap/tables.less",
+        "contentFiles/Content/bootstrap/theme.less",
+        "contentFiles/Content/bootstrap/thumbnails.less",
+        "contentFiles/Content/bootstrap/tooltip.less",
+        "contentFiles/Content/bootstrap/type.less",
+        "contentFiles/Content/bootstrap/utilities.less",
+        "contentFiles/Content/bootstrap/variables.less",
+        "contentFiles/Content/bootstrap/wells.less",
+        "contentFiles/Content/fonts/glyphicons-halflings-regular.eot",
+        "contentFiles/Content/fonts/glyphicons-halflings-regular.svg",
+        "contentFiles/Content/fonts/glyphicons-halflings-regular.ttf",
+        "contentFiles/Content/fonts/glyphicons-halflings-regular.woff",
+        "contentFiles/Content/fonts/glyphicons-halflings-regular.woff2",
+        "contentFiles/Scripts/bootstrap.js",
+        "contentFiles/Scripts/bootstrap.min.js"
+      ]
+    },
+    "Bootstrap.v3.Datetimepicker/4.17.49": {
+      "sha512": "dBA3TmQCXJ7xZuxQo0IekWJog0dpuS5fgCo8Mjho4To06+pFzEOFn/qPxZ8IlxvVuwG3c3rBIXJ7dRgflsEtqg==",
+      "type": "package",
+      "path": "bootstrap.v3.datetimepicker/4.17.49",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bootstrap.v3.datetimepicker.4.17.49.nupkg.sha512",
+        "bootstrap.v3.datetimepicker.nuspec",
+        "content/Content/_bootstrap-datetimepicker.less",
+        "content/Content/bootstrap-datetimepicker-build.less",
+        "content/Scripts/bootstrap-datetimepicker.js",
+        "content/Scripts/bootstrap-datetimepicker.min.js"
+      ]
+    },
+    "Bootstrap.v3.Datetimepicker.CSS/4.17.49": {
+      "sha512": "L9cJ+BibhmOw/O40CnuOGlWpgculIszHMR6Kov1GNV8IYijI04LRWl2moSW4ByzN6+toqj3LI+3FF8ff+0YXeQ==",
+      "type": "package",
+      "path": "bootstrap.v3.datetimepicker.css/4.17.49",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bootstrap.v3.datetimepicker.css.4.17.49.nupkg.sha512",
+        "bootstrap.v3.datetimepicker.css.nuspec",
+        "content/Content/bootstrap-datetimepicker.css",
+        "content/Content/bootstrap-datetimepicker.min.css",
+        "content/Scripts/bootstrap-datetimepicker.js",
+        "content/Scripts/bootstrap-datetimepicker.min.js"
+      ]
+    },
     "BuildBundlerMinifier/3.2.449": {
       "sha512": "uA9sYDy4VepL3xwzBTLcP2LyuVYMt0ZIT3gaSiXvGoX15Ob+rOP+hGydhevlSVd+rFo+Y+VQFEHDuWU8HBW+XA==",
       "type": "package",
@@ -3780,6 +4054,26 @@
         "humanizer.core.2.2.0.nupkg.sha512",
         "humanizer.core.nuspec",
         "lib/netstandard1.0/Humanizer.dll"
+      ]
+    },
+    "jQuery/1.9.1": {
+      "sha512": "HiX9icLyiJGgiL5EOIn0d1MBPHVV2M9mzWT4mANdniDNR51RvAFTyKEXEd2+5yQJ4PJ5xePOR61Vjj/omQzYcw==",
+      "type": "package",
+      "path": "jquery/1.9.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-1.9.1-vsdoc.js",
+        "Content/Scripts/jquery-1.9.1.js",
+        "Content/Scripts/jquery-1.9.1.min.js",
+        "Content/Scripts/jquery-1.9.1.min.map",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-1.9.1.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.1.9.1.nupkg.sha512",
+        "jquery.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/5.0.8": {
@@ -6517,6 +6811,21 @@
         "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Moment.js/2.9.0": {
+      "sha512": "4rhbvFzmgXp/gjvwjxt9Qjmdz+2CD9T99erXEDtZHlYxaI06F9A4628/Vpxklm8D9RmwJjKjp1244FwEh+a5WQ==",
+      "type": "package",
+      "path": "moment.js/2.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/moment-with-locales.js",
+        "Content/Scripts/moment-with-locales.min.js",
+        "Content/Scripts/moment.js",
+        "Content/Scripts/moment.min.js",
+        "moment.js.2.9.0.nupkg.sha512",
+        "moment.js.nuspec"
       ]
     },
     "NETStandard.Library/1.6.1": {

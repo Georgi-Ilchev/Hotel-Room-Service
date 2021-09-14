@@ -1,6 +1,6 @@
 ﻿@model CreateRoomInputModel
 @{
-    this.ViewData["Title"] = "Create Room";
+    this.ViewData["Title"] = "Създай стая";
     var categoriesItems = this.Model.CategoriesItems.Select(x => new SelectListItem(x.Value, x.Key));
     var locationsItems = this.Model.LocationItems.Select(x => new SelectListItem(x.Value, x.Key));
 }
